@@ -1,3 +1,8 @@
 require_relative './stack'
 
-# your code here
+def balancing_parentheses str = "()"
+    stack = Stack.new.push(str)
+    p stack.select(|x| x == ")")
+end
+
+
